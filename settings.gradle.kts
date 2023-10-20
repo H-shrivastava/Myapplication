@@ -1,3 +1,4 @@
+
 pluginManagement {
     repositories {
         google()
@@ -10,12 +11,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://jitpack.io" }
+        maven("https://jitpack.io")
 
     }
 }
 
 rootProject.name = "My Application"
-include ':app'
-include ':module1'
-include ':module2'
+include (":app")
+include (":module1")
+include (":module2")
