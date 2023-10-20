@@ -61,7 +61,7 @@ afterEvaluate {
                 artifact(sourcesJar.get())
                 artifactId = "module2"
                 groupId = "com.github.H-shrivastava.Myapplication"
-                version = "1.0.5"  //github release of com.github.danbrough.jitpackdemo
+                version = "1.0.6"  //github release of com.github.danbrough.jitpackdemo
             }
         }
     }
