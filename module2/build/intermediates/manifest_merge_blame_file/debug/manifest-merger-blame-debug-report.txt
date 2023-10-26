@@ -3,6 +3,6 @@
 3    package="com.example.myapplication.sample.module2" >
 4
 5    <uses-sdk android:minSdkVersion="21" />
-5-->C:\Users\Harsh Shrivastav\Personal\Myapplication\module2\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest3498452033617914470.xml
+5-->C:\Users\Harsh Shrivastav\Personal\Myapplication\module2\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest7571019451534067588.xml
 6
 7</manifest>

@@ -49,7 +49,7 @@ dependencies {
     implementation project(':core')
 //    implementation 'com.github.H-shrivastava.Myapplication:module1:1.0.14'
 //    implementation 'com.github.H-shrivastava.Myapplication:module2:1.0.14'
-//    implementation 'com.github.H-shrivastava.Myapplication:core:1.0.17'
+//    implementation 'com.github.H-shrivastava.Myapplication:core:1.0.18'
 
 }
 
