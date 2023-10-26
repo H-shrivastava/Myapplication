@@ -18,10 +18,10 @@ import vdo.ai.android.core.utils.VdoEventNames
  *  created by Ashish Saini at 6th Oct 2023
  *
  **/
-open class VdoAppOpenAd (builder : VdoAppOpenAdBuilder) : Application.ActivityLifecycleCallbacks {
+class VdoAppOpenAd (builder : VdoAppOpenAdBuilder) : Application.ActivityLifecycleCallbacks {
 
-    protected open val TAG = VdoAppOpenAd::class.java.simpleName
-    protected open var mShouldAllowAppOpenMgr:Boolean =true
+    protected  val TAG = VdoAppOpenAd::class.java.simpleName
+    protected  var mShouldAllowAppOpenMgr:Boolean =true
     private val mApplication:Application = builder.mApplication
     val mPackageName : String = mApplication.packageName
     val mEnvironment : String = builder.mEnvironment
@@ -38,37 +38,37 @@ open class VdoAppOpenAd (builder : VdoAppOpenAdBuilder) : Application.ActivityLi
         initSdk()
     }
 
-    open class VdoAppOpenAdBuilder() : VdoBaseBuilder() {
+     class VdoAppOpenAdBuilder() : VdoBaseBuilder() {
         lateinit var mApplication:Application
         lateinit var mListener: VdoAppOpenListener
 
-        open fun withContext(application: Application): VdoAppOpenAdBuilder {
+        fun withContext(application: Application): VdoAppOpenAdBuilder {
             this.mApplication = application
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoAppOpenAdBuilder {
+        fun setEnvironment(environment: String): VdoAppOpenAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-       open fun setTagName(tagName: String): VdoAppOpenAdBuilder {
+       fun setTagName(tagName: String): VdoAppOpenAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setListener(listener: VdoAppOpenListener): VdoAppOpenAdBuilder {
+        fun setListener(listener: VdoAppOpenListener): VdoAppOpenAdBuilder {
             this.mListener = listener
             return this
         }
 
-        open fun build(): VdoAppOpenAd {
+        fun build(): VdoAppOpenAd {
             return VdoAppOpenAd(this)
         }
     }
 
 
-    protected open fun initSdk() {
+    protected fun initSdk() {
         PixelApiHelper.logPixel(mContext, mEnvironment, logPixelService, VdoKUtils.getPixelDto(packageName = mPackageName, pageUrl = "", tagName = mTagName, event = VdoEventNames.LOADED))
         mApplication.registerActivityLifecycleCallbacks(this)
 
@@ -78,7 +78,7 @@ open class VdoAppOpenAd (builder : VdoAppOpenAdBuilder) : Application.ActivityLi
         }
     }
 
-    open fun showAdIfAvailable(activity: Activity, onShowAdCompleteListener: OnShowAdCompleteListener) {
+    fun showAdIfAvailable(activity: Activity, onShowAdCompleteListener: OnShowAdCompleteListener) {
         // We wrap the showAdIfAvailable to enforce that other classes only interact with MyApplication
         // class.
         appOpenAdMgr?.showAdIfAvailable(activity, onShowAdCompleteListener)

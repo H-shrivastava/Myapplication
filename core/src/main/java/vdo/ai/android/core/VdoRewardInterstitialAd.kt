@@ -24,9 +24,9 @@ import vdo.ai.android.core.utils.VdoEventNames
 *  created by Ashish Saini at 5th Oct 2023
 *
 **/
-open class VdoRewardInterstitialAd(builder : VdoRewardInterstitialAdBuilder) : RewardedInterstitialAdLoadCallback() {
+ class VdoRewardInterstitialAd(builder : VdoRewardInterstitialAdBuilder) : RewardedInterstitialAdLoadCallback() {
 
-    protected open val TAG = VdoRewardInterstitialAd::class.java.simpleName
+    protected  val TAG = VdoRewardInterstitialAd::class.java.simpleName
     private val mActivity: Activity = builder.activity
     private val mListener: VdoRewardedListener = builder.mListener
     private val mEnvironment : String = builder.mEnvironment
@@ -49,40 +49,40 @@ open class VdoRewardInterstitialAd(builder : VdoRewardInterstitialAdBuilder) : R
         getTagConfig()
     }
 
-    open class VdoRewardInterstitialAdBuilder() : VdoBaseBuilder(){
+     class VdoRewardInterstitialAdBuilder() : VdoBaseBuilder(){
         lateinit var mListener: VdoRewardedListener
 
-        open fun withContext(activity: Activity): VdoRewardInterstitialAdBuilder {
+        fun withContext(activity: Activity): VdoRewardInterstitialAdBuilder {
             this.activity = activity
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoRewardInterstitialAdBuilder {
+        fun setEnvironment(environment: String): VdoRewardInterstitialAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-        open fun setTagName(tagName: String): VdoRewardInterstitialAdBuilder {
+        fun setTagName(tagName: String): VdoRewardInterstitialAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setAllowRefresh(refresh:Boolean) : VdoRewardInterstitialAdBuilder {
+        fun setAllowRefresh(refresh:Boolean) : VdoRewardInterstitialAdBuilder {
             this.mRefreshAllowed = refresh
             return this
         }
 
-        open fun setMediation(mediationFlag:Boolean): VdoRewardInterstitialAdBuilder {
+        fun setMediation(mediationFlag:Boolean): VdoRewardInterstitialAdBuilder {
             this.mIsMediationAllowed=mediationFlag
             return this
         }
 
-        open fun setListener(listener: VdoRewardedListener): VdoRewardInterstitialAdBuilder{
+        fun setListener(listener: VdoRewardedListener): VdoRewardInterstitialAdBuilder{
             this.mListener = listener
             return this
         }
 
-        open fun build(): VdoRewardInterstitialAd {
+        fun build(): VdoRewardInterstitialAd {
             return VdoRewardInterstitialAd(this)
         }
     }

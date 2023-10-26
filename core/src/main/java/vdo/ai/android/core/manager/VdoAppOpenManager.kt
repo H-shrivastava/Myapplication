@@ -23,9 +23,9 @@ import java.util.*
  *  created by Ashish Saini at 6th Oct 2023
  *
  **/
-open class VdoAppOpenManager(private val vdoAppOpenAd:VdoAppOpenAd) : AppOpenAd.AppOpenAdLoadCallback(), VdoAdErrorListener {
+ class VdoAppOpenManager(private val vdoAppOpenAd:VdoAppOpenAd) : AppOpenAd.AppOpenAdLoadCallback(), VdoAdErrorListener {
 
-    protected open val TAG  = VdoAppOpenManager::class.java.simpleName
+    protected  val TAG  = VdoAppOpenManager::class.java.simpleName
     private var appOpenAd: AppOpenAd? = null
     private var isLoadingAd = false
     var isShowingAd = false

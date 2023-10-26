@@ -19,9 +19,9 @@ import vdo.ai.android.core.utils.*
 *  created by Ashish Saini at 5th Oct 2023
 *
 **/
-open class VdoInterstitialAd(builder : VdoInterstitialAdBuilder) :  AdManagerInterstitialAdLoadCallback(), VdoAdErrorListener {
+ class VdoInterstitialAd(builder : VdoInterstitialAdBuilder) :  AdManagerInterstitialAdLoadCallback(), VdoAdErrorListener {
 
-    protected open val TAG = VdoInterstitialAd::class.java.simpleName
+    protected  val TAG = VdoInterstitialAd::class.java.simpleName
     protected val mActivity: Activity = builder.activity
     protected val mEnvironment : String = builder.mEnvironment
     protected val mListener: VdoInterstitialListener = builder.mListener
@@ -45,40 +45,40 @@ open class VdoInterstitialAd(builder : VdoInterstitialAdBuilder) :  AdManagerInt
         getTagConfig()
     }
 
-    open class VdoInterstitialAdBuilder() : VdoBaseBuilder(){
+     class VdoInterstitialAdBuilder() : VdoBaseBuilder(){
         lateinit var mListener: VdoInterstitialListener
 
-        open fun withContext(activity: Activity): VdoInterstitialAdBuilder {
+        fun withContext(activity: Activity): VdoInterstitialAdBuilder {
             this.activity = activity
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoInterstitialAdBuilder {
+        fun setEnvironment(environment: String): VdoInterstitialAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-        open fun setTagName(tagName: String): VdoInterstitialAdBuilder {
+        fun setTagName(tagName: String): VdoInterstitialAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setAllowRefresh(refresh:Boolean) : VdoInterstitialAdBuilder {
+        fun setAllowRefresh(refresh:Boolean) : VdoInterstitialAdBuilder {
             this.mRefreshAllowed = refresh
             return this
         }
 
-        open fun setMediation(mediationStatus:Boolean): VdoInterstitialAdBuilder {
+        fun setMediation(mediationStatus:Boolean): VdoInterstitialAdBuilder {
             this.mIsMediationAllowed = mediationStatus
             return this
         }
 
-        open fun setListener(listener: VdoInterstitialListener): VdoInterstitialAdBuilder{
+        fun setListener(listener: VdoInterstitialListener): VdoInterstitialAdBuilder{
             this.mListener = listener
             return this
         }
 
-        open fun build(): VdoInterstitialAd {
+        fun build(): VdoInterstitialAd {
             return  VdoInterstitialAd(this)
         }
     }

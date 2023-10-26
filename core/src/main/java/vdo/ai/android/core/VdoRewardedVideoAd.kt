@@ -25,9 +25,9 @@ import vdo.ai.android.core.utils.VdoEventNames
  *  created by Ashish Saini at 5th Oct 2023
  *
  **/
-open class VdoRewardedVideoAd(builder : VdoRewardedVideoAdBuilder): RewardedAdLoadCallback(), VdoAdErrorListener {
+ class VdoRewardedVideoAd(builder : VdoRewardedVideoAdBuilder): RewardedAdLoadCallback(), VdoAdErrorListener {
 
-    protected open val TAG = VdoRewardedVideoAd::class.java.simpleName
+    protected  val TAG = VdoRewardedVideoAd::class.java.simpleName
     protected val mActivity: Activity = builder.activity
     protected val mListener: VdoRewardedListener = builder.mListener
     protected val mEnvironment : String = builder.mEnvironment
@@ -51,40 +51,40 @@ open class VdoRewardedVideoAd(builder : VdoRewardedVideoAdBuilder): RewardedAdLo
         getTagConfig()
     }
 
-    open class VdoRewardedVideoAdBuilder()  : VdoBaseBuilder(){
+     class VdoRewardedVideoAdBuilder()  : VdoBaseBuilder(){
         lateinit var mListener: VdoRewardedListener
 
-        open fun withContext(activity: Activity): VdoRewardedVideoAdBuilder {
+        fun withContext(activity: Activity): VdoRewardedVideoAdBuilder {
             this.activity = activity
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoRewardedVideoAdBuilder {
+        fun setEnvironment(environment: String): VdoRewardedVideoAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-        open fun setTagName(tagName: String): VdoRewardedVideoAdBuilder {
+        fun setTagName(tagName: String): VdoRewardedVideoAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setAllowRefresh(refresh:Boolean) : VdoRewardedVideoAdBuilder {
+        fun setAllowRefresh(refresh:Boolean) : VdoRewardedVideoAdBuilder {
             this.mRefreshAllowed = refresh
             return this
         }
 
-        open fun setMediation(mediationFlag:Boolean): VdoRewardedVideoAdBuilder {
+        fun setMediation(mediationFlag:Boolean): VdoRewardedVideoAdBuilder {
             this.mIsMediationAllowed=mediationFlag
             return this
         }
 
-        open fun setListener(listener: VdoRewardedListener): VdoRewardedVideoAdBuilder{
+        fun setListener(listener: VdoRewardedListener): VdoRewardedVideoAdBuilder{
             this.mListener = listener
             return this
         }
 
-        open fun build(): VdoRewardedVideoAd {
+        fun build(): VdoRewardedVideoAd {
             return VdoRewardedVideoAd(this)
         }
     }

@@ -36,9 +36,9 @@ import vdo.ai.android.core.utils.*
  *  created by Ashish Saini at 1st Feb 2023
  *
  **/
-open class VdoBannerAd protected constructor(builder : VdoBannerAdBuilder) : AdListener() {
+class VdoBannerAd protected constructor(builder : VdoBannerAdBuilder) : AdListener() {
 
-    protected open val TAG :String get() = VdoBannerAd::class.java.simpleName
+    protected  val TAG :String get() = VdoBannerAd::class.java.simpleName
     protected val mActivity : Activity = builder.activity
     private val mPackageName : String = builder.activity.packageName
     protected var mEnvironment : String = builder.mEnvironment
@@ -70,52 +70,52 @@ open class VdoBannerAd protected constructor(builder : VdoBannerAdBuilder) : AdL
         getTagConfig()
     }
 
-    open class VdoBannerAdBuilder() :VdoBaseBuilder(){
+     class VdoBannerAdBuilder() :VdoBaseBuilder(){
         var mAdContainer: ViewGroup?=null
         lateinit var mListener: VdoBannerAdListener
 
-        open fun withContext(activity: Activity): VdoBannerAdBuilder{
+        fun withContext(activity: Activity): VdoBannerAdBuilder{
             this.activity = activity
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoBannerAdBuilder {
+        fun setEnvironment(environment: String): VdoBannerAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-        open fun setBannerView( adContainer: ViewGroup?): VdoBannerAdBuilder {
+        fun setBannerView( adContainer: ViewGroup?): VdoBannerAdBuilder {
             this.mAdContainer = adContainer
             return this
         }
 
-        open fun setTagName(tagName: String): VdoBannerAdBuilder {
+        fun setTagName(tagName: String): VdoBannerAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setAllowRefresh(refresh:Boolean) :VdoBannerAdBuilder{
+        fun setAllowRefresh(refresh:Boolean) :VdoBannerAdBuilder{
             this.mRefreshAllowed = refresh
             return this
         }
 
-        open fun setAddSize(adSize: VdoAdSize): VdoBannerAdBuilder {
+        fun setAddSize(adSize: VdoAdSize): VdoBannerAdBuilder {
             this.mBannerAdSize = adSize
             return this
         }
 
-        open fun setListener(listener: VdoBannerAdListener): VdoBannerAdBuilder {
+        fun setListener(listener: VdoBannerAdListener): VdoBannerAdBuilder {
             this.mListener = listener
             return this
         }
 
-        open fun setMediation(mediationFlag:Boolean, random:Int?):VdoBannerAdBuilder{
+        fun setMediation(mediationFlag:Boolean, random:Int?):VdoBannerAdBuilder{
             this.mIsMediationAllowed=mediationFlag
             this.mRandomInt=random
             return this
         }
 
-        open fun build(): VdoBannerAd? {
+        fun build(): VdoBannerAd? {
             return VdoBannerAd(this)
         }
     }
@@ -462,11 +462,11 @@ open class VdoBannerAd protected constructor(builder : VdoBannerAdBuilder) : AdL
         VdoKUtils.getMyHandler().removeCallbacks(runnable)
     }
 
-//    open fun onResume(activity:Activity){
+//    fun onResume(activity:Activity){
 //        adManagerAdView?.resume()
 //    }
 //
-//    open fun onPause(activity: Activity){
+//    fun onPause(activity: Activity){
 //        adManagerAdView?.pause()
 //    }
 

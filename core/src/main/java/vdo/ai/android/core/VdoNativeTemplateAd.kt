@@ -27,9 +27,9 @@ import kotlin.properties.Delegates
  *  created by Ashish Saini at 6th Oct 2023
  *
  **/
-open class VdoNativeTemplateAd(builder: VdoNativeTemplateAdBuilder) {
+class VdoNativeTemplateAd(builder: VdoNativeTemplateAdBuilder) {
 
-    protected open val TAG = VdoNativeTemplateAd::class.java.simpleName
+    protected  val TAG = VdoNativeTemplateAd::class.java.simpleName
     private val mActivity : Activity = builder.activity
     private val mPackageName : String = builder.activity.packageName
     private val mEnvironment : String = builder.mEnvironment
@@ -55,60 +55,60 @@ open class VdoNativeTemplateAd(builder: VdoNativeTemplateAdBuilder) {
         getTagConfig()
     }
 
-    open class VdoNativeTemplateAdBuilder() : VdoBaseBuilder(){
+     class VdoNativeTemplateAdBuilder() : VdoBaseBuilder(){
         var mTemplateView: TemplateView?= null
         lateinit var mNativeAdOptions: NativeAdOptions
         lateinit var mListener: VdoNativeTemplateAdListener
         var background by Delegates.notNull<Int>()
 
-        open fun withContext(activity: Activity): VdoNativeTemplateAdBuilder {
+        fun withContext(activity: Activity): VdoNativeTemplateAdBuilder {
             this.activity = activity
             return this
         }
 
-        open fun setEnvironment(environment: String): VdoNativeTemplateAdBuilder {
+        fun setEnvironment(environment: String): VdoNativeTemplateAdBuilder {
             this.mEnvironment = environment
             return this
         }
 
-        open fun setTagName(tagName: String): VdoNativeTemplateAdBuilder {
+        fun setTagName(tagName: String): VdoNativeTemplateAdBuilder {
             this.mTagName = tagName
             return this
         }
 
-        open fun setTemplateView(templateView: TemplateView?): VdoNativeTemplateAdBuilder {
+        fun setTemplateView(templateView: TemplateView?): VdoNativeTemplateAdBuilder {
             this.mTemplateView = templateView
             return this
         }
 
-        open fun setAllowRefresh(refresh:Boolean) : VdoNativeTemplateAdBuilder {
+        fun setAllowRefresh(refresh:Boolean) : VdoNativeTemplateAdBuilder {
             this.mRefreshAllowed = refresh
             return this
         }
 
-        open fun setMediation(mediationFlag:Boolean): VdoNativeTemplateAdBuilder {
+        fun setMediation(mediationFlag:Boolean): VdoNativeTemplateAdBuilder {
             this.mIsMediationAllowed=mediationFlag
             return this
         }
 
-        open fun setMediaAspectRatio( aspectRatio: VdoMediaAspectRatio): VdoNativeTemplateAdBuilder {
+        fun setMediaAspectRatio( aspectRatio: VdoMediaAspectRatio): VdoNativeTemplateAdBuilder {
             mNativeAdOptions = NativeAdOptions.Builder()
                 .setVideoOptions(VideoOptions.Builder().setStartMuted(true).build())
                 .setMediaAspectRatio(aspectRatio.ratio).build()
             return this
         }
 
-        open fun setBackgroundColor(@ColorRes color: Int): VdoNativeTemplateAdBuilder{
+        fun setBackgroundColor(@ColorRes color: Int): VdoNativeTemplateAdBuilder{
             this.background = color
             return this
         }
 
-        open fun setListener(@NonNull listener: VdoNativeTemplateAdListener): VdoNativeTemplateAdBuilder {
+        fun setListener(@NonNull listener: VdoNativeTemplateAdListener): VdoNativeTemplateAdBuilder {
             this.mListener = listener
             return this
         }
 
-        open fun build(): VdoNativeTemplateAd {
+        fun build(): VdoNativeTemplateAd {
             return VdoNativeTemplateAd(this)
         }
     }
