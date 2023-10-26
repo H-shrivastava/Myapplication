@@ -45,7 +45,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
      implementation project(':module1')
      implementation project(':module2')
-    implementation 'com.github.H-shrivastava.Myapplication:core:1.0.9'
-    implementation 'com.github.H-shrivastava.Myapplication:module2:1.0.9'
+    implementation project(':core')
+//    implementation 'com.github.H-shrivastava.Myapplication:core:1.0.10'
+//    implementation 'com.github.H-shrivastava.Myapplication:module2:1.0.10'
 
 }
