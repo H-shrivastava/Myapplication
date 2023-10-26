@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+  <declare-styleable name="TemplateView" tools:ignore="ResourceName">
+    <attr name="gnt_template" format="reference"/>
+   <!--
+    <attr name="gnt_template_type" format="enum">
+      <enum name="small" value="0"/>
+      <enum name="medium" value="1"/>
+      <enum name="full_screen" value="2"/>
+    </attr>
+    -->
+  </declare-styleable>
+</resources>

@@ -20,3 +20,6 @@ rootProject.name = "My Application"
 include (":app")
 include (":module1")
 include (":module2")
+include (":core")
+
+
