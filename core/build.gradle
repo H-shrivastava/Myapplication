@@ -13,9 +13,9 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.z1media.android'
-                artifactId = 'core'
-                version = '1.0.12'
+                groupId = 'com.github.H-shrivastava'
+                artifactId = 'Myapplication'
+                version = '1.0.13'
             }
         }
     }
