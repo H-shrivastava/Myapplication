@@ -12,8 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(TextView(this).apply {
             text = """
                 Hey there! Let's do some math!
-//                 $module1String
-//                 $module2String
+
             """.trimIndent()
         })
     }
