@@ -1,16 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml:2:13-83
-INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml:2:13-83
+ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml:2:13-83
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml:2:13-83
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml:2:13-83
 	package
-		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+		ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml:2:13-83
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
 	xmlns:android
-		ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml:2:23-81
+		ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml:2:23-81
 uses-sdk
-INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml
-INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+		ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest1005746263377482626.xml
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+		ADDED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
+		INJECTED from C:\Users\Harsh Shrivastav\Personal\Myapplication\module1\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest14710855652457972616.xml
