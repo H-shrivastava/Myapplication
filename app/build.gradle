@@ -15,6 +15,7 @@ android {
         targetSdk Constants.TARGET_SDK
         versionCode 1
         multiDexEnabled = true
+
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -43,10 +44,15 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-//     implementation project(':module1')
-//     implementation project(':module2')
+     implementation project(':module1')
+     implementation project(':module2')
     implementation project(':core')
 //    implementation 'com.github.H-shrivastava.Myapplication:core:1.0.12'
 //    implementation 'com.github.H-shrivastava.Myapplication:module2:1.0.10'
 
+}
+
+task copyLibs(type: Copy) {
+    from configurations.implementation
+    into 'libs'
 }

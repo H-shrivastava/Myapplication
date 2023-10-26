@@ -3,6 +3,7 @@ import com.example.myapplication1.*
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlin-kapt'
     id 'maven-publish'
 }
 
@@ -35,15 +36,16 @@ android {
         jvmTarget = JavaVersion.VERSION_17
     }
 
-//    buildTypes {
-//        getByName("release") {
-//            isMinifyEnabled = false // IMPORTANT BIT else you release aar will have no classes
-//            proguardFiles(
-//                    getDefaultProguardFile("proguard-android-optimize.txt"),
-//                    "proguard-rules.pro"
-//            )
-//        }
-//    }
+    kapt {
+        generateStubs = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
 }
 //
 //val sourcesJar by tasks.registering(Jar::class) {
