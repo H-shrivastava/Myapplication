@@ -14,7 +14,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.H-shrivastava.Myapplication'
                 artifactId = 'module2'
-                version = '1.0.20'
+                version = '1.0.21'
             }
         }
     }
